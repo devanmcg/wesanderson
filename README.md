@@ -1,33 +1,13 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-Wes Anderson Palettes
-=====================
 
-[![Build
-Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)  
-![CRAN Downloads](http://cranlogs.r-pkg.org/badges/wesanderson)
-
-![](rushmore.jpg)
-
-> I saved you from boring plots. What did you ever do? - Max Fischer
-> (probably)
-
-Tired of generic mass produced palettes for your plots? Short of adding
-an owl and dressing up your plot in a bowler hat, here’s the most indie
-thing you can do to one. First round of palettes derived from the
-amazing Tumblr blog [Wes Anderson
-Palettes.](http://wesandersonpalettes.tumblr.com/)
+Wes Anderson Palettes (modified)
+================================
 
 Installation
 ------------
 
 ``` r
-install.packages("wesanderson")
-```
-
-**Or the development version**
-
-``` r
-devtools::install_github("karthik/wesanderson")
+devtools::install_github("devanmcg/wesanderson")
 ```
 
 Usage
@@ -35,14 +15,17 @@ Usage
 
 ``` r
 library("wesanderson")
+```
 
+``` r
 # See all palettes
 names(wes_palettes)
 #>  [1] "BottleRocket1"  "BottleRocket2"  "Rushmore1"      "Rushmore"      
 #>  [5] "Royal1"         "Royal2"         "Zissou1"        "Darjeeling1"   
 #>  [9] "Darjeeling2"    "Chevalier1"     "FantasticFox1"  "Moonrise1"     
 #> [13] "Moonrise2"      "Moonrise3"      "Cavalcanti1"    "GrandBudapest1"
-#> [17] "GrandBudapest2" "IsleofDogs1"    "IsleofDogs2"
+#> [17] "GrandBudapest2" "IsleofDogs1"    "IsleofDogs2"    "DeadLiveStrong"
+#> [21] "DeadLiveLight"  "FuelMoisture4"  "FuelMoisture5"
 ```
 
 Palettes
@@ -86,6 +69,7 @@ wes_palette("Royal2")
 
 ``` r
 library("ggplot2")
+#> Warning: package 'ggplot2' was built under R version 4.0.4
 ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
   scale_fill_manual(values = wes_palette("Royal1"))
 ```
@@ -205,20 +189,3 @@ wes_palette("IsleofDogs2")
 ```
 
 ![](figure/isleofdogs-2.png)
-
-As seen in these publications
------------------------------
-
--   [The environmental niche of the global high seas pelagic longline
-    fleet](http://advances.sciencemag.org/content/4/8/eaat3681) Science
-    Advances 08 Aug 2018
-
-![Imgur](https://i.imgur.com/gYKFwEc.jpg)
-
-![Imgur](https://i.imgur.com/3Ztc5Qa.png)
-
--   [Lopus, S., & Frye, M. (2018). Visualizing Africa’s Educational
-    Gender Gap. Socius: Sociological Research for a Dynamic World, 4,
-    237802311879595](http://journals.sagepub.com/doi/full/10.1177/2378023118795956)
-
-![Imgur](https://i.imgur.com/0BVNi9g.jpg)
