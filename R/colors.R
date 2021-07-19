@@ -22,7 +22,11 @@ wes_palettes <- list(
   GrandBudapest1 = c("#F1BB7B", "#FD6467", "#5B1A18", "#D67236"),
   GrandBudapest2 = c("#E6A0C4", "#C6CDF7", "#D8A499", "#7294D4"),
   IsleofDogs1 = c("#9986A5", "#79402E", "#CCBA72", "#0F0D0E", "#D9D0D3", "#8D8680"),
-  IsleofDogs2 = c("#EAD3BF", "#AA9486", "#B6854D", "#39312F", "#1C1718")
+  IsleofDogs2 = c("#EAD3BF", "#AA9486", "#B6854D", "#39312F", "#1C1718"),
+  DeadLiveStrong = c("#DC863B", "#446455"),
+  DeadLiveLight = c("#E1BD6D", "#74A089"),
+  FuelMoisture4 = c("#DC863B", "#E1BD6D", "#74A089", "#446455"),
+  FuelMoisture5 = c("#DC863B", "#E1BD6D", "#74A089", "#00A08A", "#446455")
 )
 
 #' A Wes Anderson palette generator
